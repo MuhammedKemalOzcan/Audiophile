@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 58px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+h4 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 38px;
+}
+
+h5 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.button-1 {
+    width: 160px;
+    height: 48px;
+    background-color: #D87D4A;
+    color: white;
+    font-family: "Manrope", serif;
+    fill: #FFFFFF;
+}
+
+.button-1:hover {
+    color: white;
+    background: #FBAF85;
+}
+
+.button-2 {
+    width: 160px;
+    height: 48px;
+    background-color: #fff;
+    color: black;
+    font-family: "Manrope", serif;
+    fill: #FFFFFF;
+    border: 1px solid black;
+
+}
+
+.button-2:hover {
+    color: white;
+    background: #000000;
+}
+
+.button-3 {
+    width: auto;
+    height: auto;
+    color: #000000;
+    font-family: "Manrope", serif;
+
+}
+
+.button-3::before {
+    content: "SHOP >";
+}
+
+.button-3:hover {
+    color: #D87D4A;
+}
+
+.input {
+    width: 309px;
+    height: 56px;
+    padding-left: 30px;
+    border: 1px solid #CFCFCF;
+    border-radius: 8px;
+}
+
+.input:focus {
+    outline: none;
+    border: 1px solid #D87D4A;
+}
+
+.input:invalid {
+    outline: none;
+    border: 1px solid #CD2C2C;
+}
+
+.zx7 {
+    background-image: url("./assets/zx7bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+.yx1 {
+    background-image: url("./assets/yx1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+nav a.active {
+    color: #D87D4A;
+}
