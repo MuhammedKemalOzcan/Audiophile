@@ -1,9 +1,28 @@
-import React from 'react'
+import axios from 'axios';
+import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-function Products({ products }) {
-
+function Products() {
     const navigate = useNavigate();
+    const [products, setProducts] = useState([]);
+    
+
+    useEffect(() => {
+        const fetchProducts = async () => {
+            try {
+                const response = await axios.get("/data.json");
+                console.log(response.data.products);
+                setProducts(response.data.products);
+            } catch (error) {
+                console.log("Products verilerinde bir hata oluştu: ", error)
+            }
+        }
+        fetchProducts();
+    }, [])
+
+    if (!products.length) {
+        return <p>Loading...</p>
+    }
 
 
     return (
